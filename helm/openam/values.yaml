@@ -107,6 +107,16 @@ ingress:
     nginx.ingress.kubernetes.io/cors-max-age: "600"
     nginx.ingress.kubernetes.io/rewrite-target: "/"
 
+route:
+  enabled: false
+  tls:
+    enabled: true
+    key:
+    certificate:
+    caCertificate:
+  annotations:
+    # kubernetes.io/tls-acme: "true"
+
 # Audit log details for log streaming sidecar containers.
 # AM can now stream audit logs to stdout. This option may be removed in the future.
 auditLogs: []

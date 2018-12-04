@@ -1,0 +1,34 @@
+# Copyright (c) 2016-2017 ForgeRock AS. Use of this source code is subject to the
+# Common Development and Distribution License (CDDL) that can be found in the LICENSE file
+# Route definition to configure external routes.
+{{- if .Values.route.enabled }}
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ .Values.component }}
+  labels:
+    app: {{ template "fullname" . }}
+    vendor: forgerock
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+  annotations:
+    {{- range $key, $value := .Values.route.annotations }}
+      {{ $key }}: {{ $value | quote }}
+    {{- end }}
+spec:
+  host: {{ template "externalFQDN" . }}
+  port:
+    targetPort: {{ .Values.service.name }}
+  to:
+    kind: Service
+    name: {{ .Values.service.name }}
+  {{- if .Values.route.tls.enabled }}
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+    key: {{ .Values.route.tls.key }}
+    certificate: {{ .Values.route.tls.certificate }}
+    caCertificate: {{ .Values.route.tls.caCertificate }}
+  {{- end -}}
+{{- end -}}
