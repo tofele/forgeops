@@ -24,3 +24,7 @@ catalinaOpts: >
   -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintGCDetails
   -XX:+PrintPromotionFailure -XX:+PrintAdaptiveSizePolicy -XX:+PrintTenuringDistribution
   -Xloggc:/tmp/gc.log -Duser.home=/home/forgerock
+
+# Openshift does not know about Ingress
+ingress:
+  enabled: false
