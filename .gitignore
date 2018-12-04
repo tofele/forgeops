@@ -1,5 +1,7 @@
 staging/
 tmp/
+*.zip
+*.war
 *.iml
 logs/
 target/
