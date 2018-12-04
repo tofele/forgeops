@@ -313,19 +313,8 @@ fi
 
 create_namespace
 
-# Inatilize helm by creating a rbac role first
-./helm-rbac-init.sh -n ${NAMESPACE}
-
-export TILLER_NAMESPACE=${NAMESPACE}
-
-# Need as sometimes tiller is not ready immediately
-while :
-do
-    helm --tiller-namespace ${NAMESPACE} ls >/dev/null 2>&1
-    test $? -eq 0 && break
-    echo "Waiting on tiller to be ready..."
-    sleep 5s
-done
+#set_tiller_namespace
+export TILLER_NAMESPACE=sws-tiller
 
 # Deploy cert-manager
 #./deploy-cert-manager.sh -n ${NAMESPACE}

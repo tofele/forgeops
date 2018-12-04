@@ -21,7 +21,7 @@ fi
 NAMESPACE=${NS:-default}
 
 # Set tiller namespace for helm
-export TILLER_NAMESPACE=${NAMESPACE}
+export TILLER_NAMESPACE=sws-tiller
 
 echo "Removing all releases for namespace $NAMESPACE"
 

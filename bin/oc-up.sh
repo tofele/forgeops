@@ -45,10 +45,13 @@ fi
 #./oc-create-nodepool.sh
 
 # Create monitoring namespace
-oc create namespace ${OC_MONITORING_PROJECT}
+oc create project ${OC_TILLERG_PROJECT}
+
+# Create monitoring namespace
+oc create project ${OC_MONITORING_PROJECT}
 
 # Create the namespace parsed from cfg file and set the context
-oc create namespace ${OC_PROJECT}
+oc create project ${OC_PROJECT}
 oc config set-context $(kubectl config current-context) --namespace=${OC_MONITORING_PROJECT}
 
 # Create storage class
