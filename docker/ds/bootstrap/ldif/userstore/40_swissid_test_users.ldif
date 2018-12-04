@@ -1,0 +1,2158 @@
+# please also update/check https://wikit.post.ch/display/SES/Test+Users+DEV+and+TEST
+
+dn: uid=46eecb24-1311-49d9-a985-4deb9c98ee34,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 46eecb24-1311-49d9-a985-4deb9c98ee34
+cn: Hans Meier
+sn: Meier
+givenName: Hans
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765204554@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: demo@example.com
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+idVerifiedIdentityPostoffice : 136cf634-3006-46b4-beb6-99261430afd6
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=test@example.com,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+cn: Hans Tester
+sn: Tester
+givenName: Hans
+telephonenumber: +41789654321
+inetUserStatus: Active
+uid: test@example.com
+mail: test@example.com
+sesamGender: 1
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=userNoId@test.com,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+cn: User Withoutid
+sn: Withoutid
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+uid: userNoId@test.com
+mail: userNoId@test.com
+sesamGender: 1
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=dmsUser@test.com,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+cn: DMS Tester
+sn: Tester
+givenName: DMS
+telephonenumber: +41765201234
+inetUserStatus: Active
+uid: dmsUser@test.com
+mail: dmsUser@test.com
+sesamGender: 1
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=sesamtest@post.ch,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+cn: Sesam Mailaccount
+sn: Mailaccount
+givenName: Sesam
+telephonenumber: +41789654321
+inetUserStatus: Active
+uid: sesamtest@post.ch
+mail: sesamtest@post.ch
+sesamGender: 1
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=df6ef657-24b0-4452-a23e-0c0be82fe6d4,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: df6ef657-24b0-4452-a23e-0c0be82fe6d4
+cn: Olivier Brugnoli
+sn: Brugnoli
+givenName: Oliver
+telephonenumber: 076 555 69 96
+mobileTelephoneNumber: +41765556996@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: brugnolio@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: JavaStorm
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=858685b4-be2b-4688-926b-9b14d6fa853c,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 858685b4-be2b-4688-926b-9b14d6fa853c
+cn: Olivier Brugnoli
+sn: Brugnoli
+givenName: Oliver
+telephonenumber: 079 555 55 55
+mobileTelephoneNumber: +41765555555@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: brugnolio@posta.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: JavaStorm
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=98191489-04c2-4765-969b-8f39bd72b845,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 98191489-04c2-4765-969b-8f39bd72b845
+cn: Gianluca Presti
+sn: Presti
+givenName: Gianluca
+telephonenumber: 076 425 55 07
+mobileTelephoneNumber: +41764255507@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: gianluca.presti@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: 1cruzsuarez
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=39ac61b3-666b-4a29-a3d8-e7fabf103a70,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 39ac61b3-666b-4a29-a3d8-e7fabf103a70
+cn: Marco Mojana
+sn: Mojana
+givenName: Marco
+telephonenumber: +41791234567
+mobileTelephoneNumber: +41791234567@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: marco.mojana@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: marco.mojana@post.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=5fdcd452-ec2e-4c93-b22d-d5af1338130,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 5fdcd452-ec2e-4c93-b22d-d5af1338130
+cn: Vinu Vinu
+sn: Vinu
+givenName: vinu
+telephonenumber: +41791234567
+mobileTelephoneNumber: +41791234567@sms.post.ch
+inetUserStatus: Active
+sesamGender: 0
+mail: gp@vinu.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: Gurke+2017
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=e9ddef0c-19d0-11e7-93ae-92361f002671,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: e9ddef0c-19d0-11e7-93ae-92361f002671
+cn: Christoph Boehlen
+sn: Boehlen
+givenName: Christoph
+telephonenumber: +41791234567
+mobileTelephoneNumber: +41791234567@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: boehlen_basel@yahoo.com
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: SwissID4Christoph
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=e16b782c-291b-4879-b36e-2d7ef69554a7,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: e16b782c-291b-4879-b36e-2d7ef69554a7
+cn: Tosca PKS
+sn: PKS
+givenName: Tosca
+telephonenumber: +41798765432
+mobileTelephoneNumber: +41798765432@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca_pkS@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca_test_5860
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=c546004f-6f23-476e-9710-41b753cfcdde,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: c546004f-6f23-476e-9710-41b753cfcdde
+cn: Christoph Boehlen
+sn: Boehlen
+givenName: Christoph
+telephonenumber: +41791234567
+mobileTelephoneNumber: +41791234567@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: christoph.boehlen+4@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: SwissID4Christoph
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=58e96726-f6a5-46a7-8320-b711ca4032eb,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 58e96726-f6a5-46a7-8320-b711ca4032eb
+cn: Christoph Boehlen
+sn: Boehlen
+givenName: Christoph
+telephonenumber: +41791234567
+mobileTelephoneNumber: +41791234567@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: christoph.boehlen+5@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: SwissID4Christoph
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403833,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403833
+cn: Michael Fuerer
+sn: Fuerer
+givenName: Michael
+telephonenumber: +41791234567
+mobileTelephoneNumber: +41791234567@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: michael.fuerer@infocentric.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: passwort
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403944,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403944
+cn: Andreas Arnold
+sn: Arnold
+givenName: Andreas
+inetUserStatus: Active
+sesamGender: 1
+mail: adreas.arnold+1@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: adreas.arnold+1@post.ch
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403955,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403955
+cn: Gianluca Presti
+sn: Presti
+givenName: Gianluca
+inetUserStatus: Active
+sesamGender: 1
+mail: gianluca.presti@epost.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: 1cruzsuarez
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403960,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403960
+cn: Maxence Kukla
+sn: Kukla
+givenName: Maxence
+inetUserStatus: Active
+sesamGender: 1
+mail: maxence.kukla@fer-ge.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403961,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403961
+cn: Romain Joachim
+sn: Joachim
+givenName: Romain
+inetUserStatus: Active
+sesamGender: 1
+mail: romain.joachim@fer-ge.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403962,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403962
+cn: Philippe Patoux
+sn: Patoux
+givenName: Philippe
+inetUserStatus: Active
+sesamGender: 1
+mail: philippe.patoux@fer-ge.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403963,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403963
+cn: Julien Emonet
+sn: Emonet
+givenName: Julien
+inetUserStatus: Active
+sesamGender: 1
+mail: julien.emonet@fer-ge.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=79ea86d1-eaac-416a-a6f5-c059ef403964,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79ea86d1-eaac-416a-a6f5-c059ef403964
+cn: Sylvain Lapp
+sn: Lapp
+givenName: Sylvain
+inetUserStatus: Active
+sesamGender: 1
+mail: Sylvain.Lapp@fer-ge.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=99ea99d1-eaac-416a-a6f5-c059ef403955,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 99ea99d1-eaac-416a-a6f5-c059ef403955
+cn: Blazenka Zrakic
+sn: Zrakic
+givenName: Blazenka
+inetUserStatus: Active
+sesamGender: 0
+mail: blazenka.zrakic@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: Test_1234
+
+dn: uid=5f3e88d8-4dac-473e-b0f3-ddb79441bb9e,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 5f3e88d8-4dac-473e-b0f3-ddb79441bb9e
+cn: Zhao Wang
+sn: Wang
+givenName: Zhao
+inetUserStatus: Active
+sesamGender: 1
+mail: sid-social@tdf.ringier.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=e7edd214-15b7-4f98-b168-967d73290133,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: e7edd214-15b7-4f98-b168-967d73290133
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: dario.bruzzone+pk410@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk410@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=2fa09f8a-288b-4ee0-9e16-f91900bbb53b,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 2fa09f8a-288b-4ee0-9e16-f91900bbb53b
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk411@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk411@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=ed5aae54-9b79-48e6-a6b5-e48991a3fb88,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: ed5aae54-9b79-48e6-a6b5-e48991a3fb88
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk412@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk412@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=d8971fb6-abc1-4e1e-9b3d-bf5430140a8b,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: d8971fb6-abc1-4e1e-9b3d-bf5430140a8b
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk413@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk413@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=b71ea6ed-6037-42f5-8e6d-f3cddbd77fb3,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: b71ea6ed-6037-42f5-8e6d-f3cddbd77fb3
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk414@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk414@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=392dc024-b6d9-42e0-a635-e4c13a7fa95b,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 392dc024-b6d9-42e0-a635-e4c13a7fa95b
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk415@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk415@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=fd0c5dd6-e9ac-4f94-9dc4-beff2eb4cb27,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: fd0c5dd6-e9ac-4f94-9dc4-beff2eb4cb27
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk416@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk416@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=9bb5b2dc-31f7-4294-bc89-76fbe71c37cc,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 9bb5b2dc-31f7-4294-bc89-76fbe71c37cc
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk417@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk417@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=6af42ab1-0ac2-4dac-8475-5ca858f0ea26,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 6af42ab1-0ac2-4dac-8475-5ca858f0ea26
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerpk418@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerpk418@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=d983e479-0bcc-4b04-a18c-213236ffc8d4,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: d983e479-0bcc-4b04-a18c-213236ffc8d4
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerfk410@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk410@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=b1c458a3-82d4-42c0-92a0-6709fd9c169e,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: b1c458a3-82d4-42c0-92a0-6709fd9c169e
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerfk411@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk411@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=8b178b6f-020e-4eee-a6ff-7d852ba7be39,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 8b178b6f-020e-4eee-a6ff-7d852ba7be39
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerfk412@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk412@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=35cf4c99-4130-4c92-b99d-9b3028e9e320,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 35cf4c99-4130-4c92-b99d-9b3028e9e320
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerfk413@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk413@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=21ce59a4-b646-48cc-a505-62e16803e5e4,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 21ce59a4-b646-48cc-a505-62e16803e5e4
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerfk414@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk414@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=ffe520f2-9efc-465d-a778-cd5368be322c,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: ffe520f2-9efc-465d-a778-cd5368be322c
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerfk415@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk415@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=46fa7976-ecb8-4fad-9ea9-1afb55e7603e,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 46fa7976-ecb8-4fad-9ea9-1afb55e7603e
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: tosca.benutzerfk416@test.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk416@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=7a287f56-541d-441d-a2c3-4156a22e9a7c,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 7a287f56-541d-441d-a2c3-4156a22e9a7c
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: dario.bruzzone+fk417@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk417@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=e8626d66-0ada-4a5e-9202-d420b8083591,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: e8626d66-0ada-4a5e-9202-d420b8083591
+cn: User Test
+sn: Test
+givenName: User
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: dario.bruzzone+fk418@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: tosca.benutzerfk418@test.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=79431625-4583-42c6-8927-52a0fecea607,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 79431625-4583-42c6-8927-52a0fecea607
+cn: Smoke Test
+sn: Test
+givenName: Smoke
+telephonenumber: +41765201234
+inetUserStatus: Active
+sesamGender: 1
+mail: smokeSwissID@test.post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: Gurke+2017
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=99ea86d1-eaac-416a-a6f5-c059ef403955,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 99ea86d1-eaac-416a-a6f5-c059ef403955
+cn: Laura Kieser
+sn: Kieser
+givenName: Laura
+inetUserStatus: Active
+sesamGender: 0
+mail: laura.kieser@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: Test_1234
+
+dn: uid=061d4bc1-1582-48bb-8123-b01f72a899e0,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 061d4bc1-1582-48bb-8123-b01f72a899e0
+cn: Laura Kieser
+sn: Kieser
+givenName: Laura
+telephonenumber: +41464008493
+inetUserStatus: Active
+sesamGender: 0
+mail: laura.kieser1@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: laura.kieser1@post.ch
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+dn: uid=46eecb24-1311-49d9-a985-43219c98ee34,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 46eecb24-1311-49d9-a985-43219c98ee34
+cn: Pilot Pirx
+sn: Pirx
+givenName: Pilot
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765204554@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: sesamtest+pilotpirx@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+oauth2SaveConsent: sesam phone openid profile email
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+swissidModifyTimestamp: 20090813145607.0Z
+securityQuestions: [{"id":1,"answer":"aaa"},{"id":2,"answer":"bbb"}]
+
+dn: uid=46eecb24-4321-49d9-a985-43219c98ee34,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 46eecb24-4321-49d9-a985-43219c98ee34
+cn: franco Wankerl
+sn: Wankerl
+givenName: Franco
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: franco.wankerl@swisssign.com
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+idVerifiedIdentityPostoffice : 136cf634-3006-46b4-beb6-99261430afd6
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=993985be-d84b-4d1d-9387-64446df40cf5,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: 993985be-d84b-4d1d-9387-64446df40cf5
+cn: Dario Bruzzone
+sn: Bruzzone
+givenName: Dario
+telephonenumber: +41791233211
+mobileTelephoneNumber: +41791233211@sms.post.ch
+inetUserStatus: Active
+sesamGender: 1
+mail: dario.bruzzone+t@mac.com
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: dario.bruzzone+t@mac.com
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+idVerifiedIdentityPostoffice : 136cf634-3006-46b4-beb6-99261430afd6
+swissidModifyTimestamp: 20090813145607.0Z
+
+dn: uid=e7edd214-15b7-4f98-b168-967d73290999,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: e7edd214-15b7-4f98-b168-967d73290999
+cn: Always Twofactor
+sn: Twofactor
+givenName: Always
+telephonenumber: +41792345678
+inetUserStatus: Active
+sesamGender: 1
+mail: swissid-always-2fa@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: a1w4y52FA
+accountRecoveryCode: {SSHA-256}SFfN7kvQEUtRbZrCF+9g8aQkRG22G/YIhcFMYeIiIKzBJ9JYWPmgzJyL/wYnRPHk
+accountRecoveryCodeGeneratedAt: 20090813145607.0Z
+
+
+
+
+# -----------------------------------------------------------------------
+# Support users (see also https://gitit.post.ch/projects/SESAM/repos/sesam/browse/sesam-assembly/src/main/resources/etc/config/opendj/ldif/support-users.ldif)
+# We will create four support users, one for each testing environment.
+# All users will be created in all environments, in dev we will only use dev etc.,
+# so that we can distingush the mails in the shared mailbox.
+
+dn: uid=test-abddc867-e042-47aa-8dfb-local-support,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-abddc867-e042-47aa-8dfb-local-support
+cn: Support Bernasconi local
+sn: Bernasconi local
+givenName: Support
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+support+local@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=test-abddc867-e042-47aa-8dfb-dev-support,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-abddc867-e042-47aa-8dfb-dev-support
+cn: Support Bernasconi dev
+sn: Bernasconi dev
+givenName: Support
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+support+dev@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=test-abddc867-e042-47aa-8dfb-test-support,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-abddc867-e042-47aa-8dfb-test-support
+cn: Support Bernasconi test
+sn: Bernasconi test
+givenName: Support
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+support+test@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+
+dn: uid=test-abddc867-e042-47aa-8dfb-eng-support,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-abddc867-e042-47aa-8dfb-eng-support
+cn: Support Bernasconi eng
+sn: Bernasconi eng
+givenName: Support
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+support+eng@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=test-abddc867-e042-47aa-8dfb-int-support,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-abddc867-e042-47aa-8dfb-int-support
+cn: Support Bernasconi int
+sn: Bernasconi int
+givenName: Support
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+support+int@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+# -----------------------------------------------------------------------
+# Verified identity test users
+# We will create four users, one for each testing environment.
+# All users will be created in all environments, in dev we will only use dev etc.,
+# so that we can distingush the mails in the shared mailbox.
+dn: uid=test-b242e422-9ce9-99d5-12ec-local-verifiedid,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-b242e422-9ce9-99d5-12ec-local-verifiedid
+cn: Verified Verena Vetter local
+sn: Vetter local
+givenName: Verena
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+verifiedid+local@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+oauth2SaveConsent: sesam openid profile
+oauth2SaveConsent: sesam openid email
+oauth2SaveConsent: sesam phone openid
+oauth2SaveConsent: sesam swissid_nationality openid
+oauth2SaveConsent: sesam openid swissid_place_of_birth
+oauth2SaveConsent: sesam phone swissid_nationality openid swissid_age_over email
+oauth2SaveConsent: sesam openid swissid_date_of_birth
+oauth2SaveConsent: sesam phone openid email
+oauth2SaveConsent: sesam suisseid_number openid
+oauth2SaveConsent: sesam swissid_nationality openid profile
+oauth2SaveConsent: sesam openid swissid_age_over
+oauth2SaveConsent: sesam openid swissid_valid_until
+idVerifiedIdentityPostoffice: test-b242e422-9ce9-13a6-298c-local-verifiedid
+swissidModifyTimestamp: 20180906111100.0Z
+
+dn: uid=test-b242e422-9ce9-99d5-12ec-dev-verifiedid,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-b242e422-9ce9-99d5-12ec-dev-verifiedid
+cn: Verified Verena Vetter dev
+sn: Vetter dev
+givenName: Verena
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+verifiedid+dev@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+oauth2SaveConsent: sesam openid profile
+oauth2SaveConsent: sesam openid email
+oauth2SaveConsent: sesam phone openid
+oauth2SaveConsent: sesam swissid_nationality openid
+oauth2SaveConsent: sesam openid swissid_place_of_birth
+oauth2SaveConsent: sesam phone swissid_nationality openid swissid_age_over email
+oauth2SaveConsent: sesam openid swissid_date_of_birth
+oauth2SaveConsent: sesam phone openid email
+oauth2SaveConsent: sesam suisseid_number openid
+oauth2SaveConsent: sesam swissid_nationality openid profile
+oauth2SaveConsent: sesam openid swissid_age_over
+oauth2SaveConsent: sesam openid swissid_valid_until
+idVerifiedIdentityPostoffice: test-b242e422-9ce9-13a6-298c-dev-verifiedid
+swissidModifyTimestamp: 20180906111100.0Z
+
+
+dn: uid=test-b242e422-9ce9-99d5-12ec-test-verifiedid,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-b242e422-9ce9-99d5-12ec-test-verifiedid
+cn: Verified Verena Vetter test
+sn: Vetter test
+givenName: Verena
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+verifiedid+test@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+oauth2SaveConsent: sesam openid profile
+oauth2SaveConsent: sesam openid email
+oauth2SaveConsent: sesam phone openid
+oauth2SaveConsent: sesam swissid_nationality openid
+oauth2SaveConsent: sesam openid swissid_place_of_birth
+oauth2SaveConsent: sesam phone swissid_nationality openid swissid_age_over email
+oauth2SaveConsent: sesam openid swissid_date_of_birth
+oauth2SaveConsent: sesam phone openid email
+oauth2SaveConsent: sesam suisseid_number openid
+oauth2SaveConsent: sesam swissid_nationality openid profile
+oauth2SaveConsent: sesam openid swissid_age_over
+oauth2SaveConsent: sesam openid swissid_valid_until
+idVerifiedIdentityPostoffice: test-b242e422-9ce9-13a6-298c-test-verifiedid
+swissidModifyTimestamp: 20180906111100.0Z
+
+
+dn: uid=test-b242e422-9ce9-99d5-12ec-eng-verifiedid,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-b242e422-9ce9-99d5-12ec-eng-verifiedid
+cn: Verified Verena Vetter eng
+sn: Vetter eng
+givenName: Verena
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+verifiedid+eng@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+oauth2SaveConsent: sesam openid profile
+oauth2SaveConsent: sesam openid email
+oauth2SaveConsent: sesam phone openid
+oauth2SaveConsent: sesam swissid_nationality openid
+oauth2SaveConsent: sesam openid swissid_place_of_birth
+oauth2SaveConsent: sesam phone swissid_nationality openid swissid_age_over email
+oauth2SaveConsent: sesam openid swissid_date_of_birth
+oauth2SaveConsent: sesam phone openid email
+oauth2SaveConsent: sesam suisseid_number openid
+oauth2SaveConsent: sesam swissid_nationality openid profile
+oauth2SaveConsent: sesam openid swissid_age_over
+oauth2SaveConsent: sesam openid swissid_valid_until
+idVerifiedIdentityPostoffice: test-b242e422-9ce9-13a6-298c-eng-verifiedid
+swissidModifyTimestamp: 20180906111100.0Z
+
+
+dn: uid=test-b242e422-9ce9-99d5-12ec-int-verifiedid,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: test-b242e422-9ce9-99d5-12ec-int-verifiedid
+cn: Verified Verena Vetter int
+sn: Vetter int
+givenName: Verena
+telephonenumber: +41765201234
+mobileTelephoneNumber: +41765201234@sms.post.ch
+inetUserStatus: Active
+sesamGender: 2
+mail: sesamtest+verifiedid+int@post.ch
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+oauth2SaveConsent: sesam openid profile
+oauth2SaveConsent: sesam openid email
+oauth2SaveConsent: sesam phone openid
+oauth2SaveConsent: sesam swissid_nationality openid
+oauth2SaveConsent: sesam openid swissid_place_of_birth
+oauth2SaveConsent: sesam phone swissid_nationality openid swissid_age_over email
+oauth2SaveConsent: sesam openid swissid_date_of_birth
+oauth2SaveConsent: sesam phone openid email
+oauth2SaveConsent: sesam suisseid_number openid
+oauth2SaveConsent: sesam swissid_nationality openid profile
+oauth2SaveConsent: sesam openid swissid_age_over
+oauth2SaveConsent: sesam openid swissid_valid_until
+idVerifiedIdentityPostoffice: test-b242e422-9ce9-13a6-298c-int-verifiedid
+swissidModifyTimestamp: 20180906111100.0Z
+
+
+
+
+# (removed Users for IDP Discovery)
+
+
+# Group assignments (keep at the bottom of the file) ----------------------------------------------------------------
+
+# idcheck pilot group
+dn: cn=Z-SESAM-IDCHECK,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=46eecb24-1311-49d9-a985-4deb9c98ee34,ou=people,@BASE_DN@
+uniqueMember: uid=test@example.com,ou=people,@BASE_DN@
+uniqueMember: uid=sesamtest@post.ch,ou=people,@BASE_DN@
+uniqueMember: uid=46eecb24-1311-49d9-a985-43219c98ee34,ou=people,@BASE_DN@
+uniqueMember: uid=46eecb24-4321-49d9-a985-43219c98ee34,ou=people,@BASE_DN@
+
+# SwissIDApp pilot group
+dn: cn=Z-SESAM-SWISSID-APP,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=46eecb24-1311-49d9-a985-4deb9c98ee34,ou=people,@BASE_DN@
+uniqueMember: uid=test@example.com,ou=people,@BASE_DN@
+uniqueMember: uid=sesamtest@post.ch,ou=people,@BASE_DN@
+uniqueMember: uid=46eecb24-1311-49d9-a985-43219c98ee34,ou=people,@BASE_DN@
+uniqueMember: uid=46eecb24-4321-49d9-a985-43219c98ee34,ou=people,@BASE_DN@
+
+# .... support groups ...
+dn: cn=Z-SESAM-SUPPORT-CDO,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-local-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-dev-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-test-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-eng-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-int-support,ou=people,@BASE_DN@
+
+dn: cn=Z-SESAM-SUPPORT-1L,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-local-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-dev-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-test-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-eng-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-int-support,ou=people,@BASE_DN@
+
+dn: cn=Z-SESAM-SUPPORT-2L,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-local-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-dev-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-test-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-eng-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-int-support,ou=people,@BASE_DN@
+
+dn: cn=Z-SESAM-SUPPORT-RP-M,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-local-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-dev-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-test-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-eng-support,ou=people,@BASE_DN@
+uniqueMember: uid=test-abddc867-e042-47aa-8dfb-int-support,ou=people,@BASE_DN@
+#..........

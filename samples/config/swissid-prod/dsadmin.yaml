@@ -1,0 +1,26 @@
+image:
+#  repository: forgerock-docker-public.bintray.io/ds
+#  repository: gcr.io/engineering-devops/ds
+  repository: eu.gcr.io/swissid-cloud/ds
+  tag: 6.5.0
+  pullPolicy: Always
+
+gcs:
+  enabled: false
+  bucket: gs://swissid-backup-archive/dj-backup/prod
+
+s3:
+  enabled: false
+  bucket: s3://forgeops/dj-backup/prod
+
+nfs:
+  server: 10.92.22.138
+  path: /export
+
+backup:
+  pvcName: ds-backup
+  storageSize: 100Gi
+
+createPVC: true
+
+slackUrl: undefined

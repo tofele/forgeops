@@ -1,0 +1,5 @@
+dn: cn=Z-SESAM-CHANGELOG-ACCOUNTS,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: Z-SESAM-CHANGELOG-ACCOUNTS

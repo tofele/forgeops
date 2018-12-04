@@ -1,0 +1,8 @@
+domain: .example.com
+
+fqdn: login.int.example.com
+
+# Install passwords.
+amadminPassword: password
+encryptionKey: "123456789012"
+policyAgentPassword: Passw0rd

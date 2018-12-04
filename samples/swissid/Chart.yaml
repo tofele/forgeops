@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart to deploy the SwissID platform
+name: swissid
+version: 1.0

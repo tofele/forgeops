@@ -8,7 +8,7 @@ USERS=1000000
 START=0
 
 
-BASE_DN="ou=identities"
+BASE_DN="${BASE_DN:-ou=identities}"
 
 [[ $# -eq 1 ]] && USERS=$1
 [[ $# -eq 2 ]] && USERS=$1 && START=$2

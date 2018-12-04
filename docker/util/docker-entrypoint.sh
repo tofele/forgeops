@@ -17,13 +17,13 @@ pause() {
 }
 
 case "$command"  in
-bootstrap) 
-    exec $HOME/am_bootstrap.sh
+bootstrap)
+    exec $FORGEROCK_HOME/am_bootstrap.sh
     ;;
 wait)
     # execute wait_for script that waits for a service, pod, etc. to be ready.
     shift
-    exec $HOME/wait_for_service.sh "$@"
+    exec $FORGEROCK_HOME/wait_for_service.sh "$@"
     ;;
 pause) 
     pause

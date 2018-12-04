@@ -1,0 +1,6 @@
+domain: .example.com
+
+fqdn: login.eng.example.com
+
+image:
+  pullPolicy: Always

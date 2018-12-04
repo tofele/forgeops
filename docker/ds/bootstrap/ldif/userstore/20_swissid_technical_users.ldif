@@ -1,0 +1,33 @@
+dn: uid=accountmanager,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+#Adding swissidAccountExtension object class to accountmanager because logs throw unnecessary exceptions due to missing attributes (e.g. failedLoginAttempt) when accountmanager login fails
+objectClass: swissidAccountExtension
+cn: accountmanager
+sn: Manager
+givenName: Account
+inetUserStatus: Active
+mail: accountmanager@post.ch
+uid: accountmanager
+userPassword: password
+
+dn: cn=Technical Users,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=accountmanager,ou=people,@BASE_DN@

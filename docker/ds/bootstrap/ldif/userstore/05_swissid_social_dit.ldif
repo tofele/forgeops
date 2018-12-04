@@ -1,0 +1,4 @@
+dn: ou=social,@BASE_DN@
+ou: social
+objectClass: organizationalUnit
+objectClass: top

@@ -10,6 +10,16 @@ image:
   # For development we set this to Always to get the most current image:
   pullPolicy: IfNotPresent
 
+gitImage:
+  repository: forgerock-docker-public.bintray.io/forgerock/git
+  tag: 6.5.0
+  pullPolicy: IfNotPresent
+
+utilImage:
+  repository: forgerock-docker-public.bintray.io/forgerock/util
+  tag: 6.5.0
+  pullPolicy: IfNotPresent
+
 domain: .example.com
 
 config:
@@ -34,7 +44,7 @@ catalinaOpts: >
   -server -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap
   -Dcom.sun.identity.util.debug.provider=com.sun.identity.shared.debug.impl.StdOutDebugProvider
   -Dcom.sun.identity.shared.debug.file.format='%PREFIX% %MSG%\\n%STACKTRACE%'
-  -Dcom.iplanet.services.stats.state=off
+  -Dcom.iplanet.services.stats.state=off -Duser.home=/home/forgerock
 
 # For visualVM debug, you can add this to the above:
 #-Dcom.sun.management.jmxremote.port=<port>

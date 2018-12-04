@@ -21,6 +21,6 @@ backup:
   pvcName: ds-backup
   storageSize: 100Gi
 
-createPVC: true
+createPVC: false
 
 slackUrl: undefined

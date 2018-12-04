@@ -1,0 +1,72 @@
+image:
+  #repository: forgerock-docker-public.bintray.io/forgerock/ds
+  #repository: gcr.io/engineering-devops/ds
+  repository: docker-registry.default.svc:5000/sws-tom1/ds
+  tag: 6.5.0
+  pullPolicy: Always
+
+instance: userstore
+
+configstore:
+  enabled: false
+
+cts:
+  enabled: false
+
+userstore:
+  enabled: true
+
+idmRepo:
+  enabled: false
+
+resources:
+  limits:
+    cpu: 3000m
+    memory: 1Gi
+  requests:
+    cpu: 1500m
+    memory: 1Gi
+
+persistence: false
+
+# Uncomment the next 3 line if you don't want to use cgroups which is the default JVM setting
+#opendjJavaArgs: >
+#  -server -Xms4g -Xmx4g -XX:+UseCompressedOops -XX:+UseG1GC -XX:+UseNUMA
+#  -XX:MaxGCPauseMillis=100 -verbose:gc -Xlog:gc:/tmp/gc.log
+
+# For JDK 8
+opendjJavaArgs: >
+  -server -Xms1g -Xmx1g -XX:+UseCompressedOops -XX:+UseG1GC -XX:+UseNUMA
+  -XX:MaxGCPauseMillis=100 -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps
+  -XX:+PrintGCDetails -XX:+PrintPromotionFailure -XX:+PrintAdaptiveSizePolicy -Xloggc:/tmp/gc.log
+
+# JDK 8 additianl settings from Post SwissID
+#  -d64 -XX:NewSize=512M -XX:MaxNewSize=512M -XX:+UseCompressedOops -XX:MaxTenuringThreshold=1 -XX:+UseConcMarkSweepGC -XX:+UseStringDeduplication -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=20 -XX:GCLogFileSize=1M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/heap_dump.hprof"
+
+# For JDK 11
+#opendjJavaArgs: >
+#  -server -Xms3g -Xmx3g -XX:+UseCompressedOops -XX:+UseG1GC -XX:+UseNUMA
+#  -XX:MaxGCPauseMillis=100 -verbose:gc -Xlog:gc:/tmp/gc.log
+
+
+storageSize: 5Gi
+#storageClass: fast
+
+replicas: 1
+
+storageSize: 1Gi
+
+topologyKey: "kubernetes.io/hostname"
+
+podAntiAffinity: soft
+
+backup:
+#  pvcClaimName: ds-backup
+  clusterName: dev
+  verify: false
+
+# If existing database is found then restore is always skipped
+restore:
+  enabled: false
+
+securityContext:

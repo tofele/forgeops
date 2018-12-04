@@ -1,0 +1,15 @@
+dn: uid=selfmanagement,ou=admins,@BASE_DN@
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: selfmanagement Administrator
+sn: selfmanagement
+userPassword: password
+ds-privilege-name: password-reset
+
+dn: @BASE_DN@
+changetype: modify
+add: aci
+aci: (targetattr="* || aci")(version 3.0;acl "Allow identity modification"; allow (write)(userdn = "ldap:///uid=selfmanagement,ou=admins,@BASE_DN@");)
+aci: (targetattr!="userPassword||authPassword")(version 3.0; acl "Allow identity search"; allow (search, read)(userdn = "ldap:///uid=selfmanagement,ou=admins,@BASE_DN@");)

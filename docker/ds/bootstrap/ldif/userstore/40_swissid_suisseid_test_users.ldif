@@ -1,0 +1,183 @@
+dn: identityId=136cf634-3006-46b4-beb6-99261430afd6,ou=user_identity_idl_1,@BASE_DN@
+changetype: add
+objectClass: top
+objectClass: userIdentity
+identityId : 136cf634-3006-46b4-beb6-99261430afd6
+identityGivenNames : Hans Rudolf Paul
+identityFirstName : Hans
+identityLastName : Meier
+identityGender : 1
+identityNationality : CHE
+identityPlaceOfBirth : Uster
+identityDateOfBirthFull : 19800116000000.000Z
+identitySuisseIdNo : 1300-8015-4082-3416
+identityIdentificationNumber : 123
+identityIdentificationNumberFull : 12345
+identityIdentificationKind : 0
+identityQualityOfRegistration : 3
+identityIssuingCountry : CHE
+identityIssuingOffice : Zürich ZH
+identityIdentificationIssuedOn : 20090813145607.0Z
+identityIdentificationValidUntil : 20090813145607.0Z
+identityCheckDateTime : 20090813145607.0Z
+identityProcessId : 1
+identityStatus: CURRENT
+identityAccountId : 46eecb24-1311-49d9-a985-4deb9c98ee34
+
+dn: identityId=136cf634-3006-46b4-beb6-99261430afd5,ou=user_identity_idl_1,@BASE_DN@
+changetype: add
+objectClass: top
+objectClass: userIdentity
+identityId : 136cf634-3006-46b4-beb6-99261430afd5
+identityGivenNames : Hans Rudolf Paul
+identityFirstName : Hans
+identityLastName : Meier
+identityGender : 1
+identityNationality : CHE
+identityIdentificationNumber : 124
+identityIdentificationNumberFull : 12346
+identityIdentificationKind : 0
+identityQualityOfRegistration : 3
+identityIssuingCountry : CHE
+identityIssuingOffice : Zürich ZH
+identityIdentificationIssuedOn : 20090813145607.0Z
+identityIdentificationValidUntil : 20090813145607.0Z
+identityCheckDateTime : 20090813145607.0Z
+identityProcessId : 1
+identityStatus: HISTORIC
+identityAccountId : 46eecb24-1311-49d9-a985-4deb9c98ee34
+
+
+
+### verified id test users -identities (5) -------------------------------------------------------------------
+dn: identityId=test-b242e422-9ce9-13a6-298c-local-verifiedid,ou=user_identity_idl_1,@BASE_DN@
+changetype: add
+objectClass: top
+objectClass: userIdentity
+identityId : test-b242e422-9ce9-13a6-298c-local-verifiedid
+identityGivenNames : Verena Viktoria
+identityFirstName : Verena
+identityLastName : Vetter local
+identityGender : 2
+identityNationality : CHE
+identityPlaceOfBirth : Versoix
+identityDateOfBirthFull : 19800116000000.000Z
+identitySuisseIdNo : 1300-9534-4082-4201
+identityIdentificationNumber : 130
+identityIdentificationNumberFull : 13045
+identityIdentificationKind : 0
+identityQualityOfRegistration : 3
+identityIssuingCountry : CHE
+identityIssuingOffice : Zürich ZH
+identityIdentificationIssuedOn : 20090813145607.0Z
+identityIdentificationValidUntil : 20090813145607.0Z
+identityCheckDateTime : 20090813145607.0Z
+identityProcessId : 1
+identityStatus: CURRENT
+identityAccountId : test-b242e422-9ce9-99d5-12ec-local-verifiedid
+
+dn: identityId=test-b242e422-9ce9-13a6-298c-dev-verifiedid,ou=user_identity_idl_1,@BASE_DN@
+changetype: add
+objectClass: top
+objectClass: userIdentity
+identityId : test-b242e422-9ce9-13a6-298c-dev-verifiedid
+identityGivenNames : Verena Viktoria
+identityFirstName : Verena
+identityLastName : Vetter dev
+identityGender : 2
+identityNationality : CHE
+identityPlaceOfBirth : Versoix
+identityDateOfBirthFull : 19800116000000.000Z
+identitySuisseIdNo : 1300-9534-4082-4201
+identityIdentificationNumber : 131
+identityIdentificationNumberFull : 13145
+identityIdentificationKind : 0
+identityQualityOfRegistration : 3
+identityIssuingCountry : CHE
+identityIssuingOffice : Zürich ZH
+identityIdentificationIssuedOn : 20090813145607.0Z
+identityIdentificationValidUntil : 20090813145607.0Z
+identityCheckDateTime : 20090813145607.0Z
+identityProcessId : 1
+identityStatus: CURRENT
+identityAccountId : test-b242e422-9ce9-99d5-12ec-dev-verifiedid
+
+dn: identityId=test-b242e422-9ce9-13a6-298c-test-verifiedid,ou=user_identity_idl_1,@BASE_DN@
+changetype: add
+objectClass: top
+objectClass: userIdentity
+identityId : test-b242e422-9ce9-13a6-298c-test-verifiedid
+identityGivenNames : Verena Viktoria
+identityFirstName : Verena
+identityLastName : Vetter test
+identityGender : 2
+identityNationality : CHE
+identityPlaceOfBirth : Versoix
+identityDateOfBirthFull : 19800116000000.000Z
+identitySuisseIdNo : 1300-9534-4082-4202
+identityIdentificationNumber : 132
+identityIdentificationNumberFull : 13245
+identityIdentificationKind : 0
+identityQualityOfRegistration : 3
+identityIssuingCountry : CHE
+identityIssuingOffice : Zürich ZH
+identityIdentificationIssuedOn : 20090813145607.0Z
+identityIdentificationValidUntil : 20090813145607.0Z
+identityCheckDateTime : 20090813145607.0Z
+identityProcessId : 1
+identityStatus: CURRENT
+identityAccountId : test-b242e422-9ce9-99d5-12ec-test-verifiedid
+
+dn: identityId=test-b242e422-9ce9-13a6-298c-eng-verifiedid,ou=user_identity_idl_1,@BASE_DN@
+changetype: add
+objectClass: top
+objectClass: userIdentity
+identityId : test-b242e422-9ce9-13a6-298c-eng-verifiedid
+identityGivenNames : Verena Viktoria
+identityFirstName : Verena
+identityLastName : Vetter eng
+identityGender : 2
+identityNationality : CHE
+identityPlaceOfBirth : Versoix
+identityDateOfBirthFull : 19800116000000.000Z
+identitySuisseIdNo : 1300-9534-4082-4203
+identityIdentificationNumber : 133
+identityIdentificationNumberFull : 13345
+identityIdentificationKind : 0
+identityQualityOfRegistration : 3
+identityIssuingCountry : CHE
+identityIssuingOffice : Zürich ZH
+identityIdentificationIssuedOn : 20090813145607.0Z
+identityIdentificationValidUntil : 20090813145607.0Z
+identityCheckDateTime : 20090813145607.0Z
+identityProcessId : 1
+identityStatus: CURRENT
+identityAccountId : test-b242e422-9ce9-99d5-12ec-eng-verifiedid
+
+dn: identityId=test-b242e422-9ce9-13a6-298c-int-verifiedid,ou=user_identity_idl_1,@BASE_DN@
+changetype: add
+objectClass: top
+objectClass: userIdentity
+identityId : test-b242e422-9ce9-13a6-298c-int-verifiedid
+identityGivenNames : Verena Viktoria
+identityFirstName : Verena
+identityLastName : Vetter int
+identityGender : 2
+identityNationality : CHE
+identityPlaceOfBirth : Versoix
+identityDateOfBirthFull : 19800116000000.000Z
+identitySuisseIdNo : 1300-9534-4082-4204
+identityIdentificationNumber : 134
+identityIdentificationNumberFull : 13445
+identityIdentificationKind : 0
+identityQualityOfRegistration : 3
+identityIssuingCountry : CHE
+identityIssuingOffice : Zürich ZH
+identityIdentificationIssuedOn : 20090813145607.0Z
+identityIdentificationValidUntil : 20090813145607.0Z
+identityCheckDateTime : 20090813145607.0Z
+identityProcessId : 1
+identityStatus: CURRENT
+identityAccountId : test-b242e422-9ce9-99d5-12ec-int-verifiedid
+
+

@@ -1,0 +1,21 @@
+dn: uid=idcheck,ou=admins,@BASE_DN@
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: idcheck Administrator
+sn: idcheck
+userPassword: password
+ds-privilege-name: password-reset
+
+dn: @BASE_DN@
+changetype: modify
+add: aci
+aci: (targetattr="* || aci")(version 3.0;acl "Allow identity modification"; allow (write)(userdn = "ldap:///uid=idcheck,ou=admins,@BASE_DN@");)
+aci: (targetattr!="userPassword||authPassword")(version 3.0; acl "Allow identity search"; allow (search, read)(userdn = "ldap:///uid=idcheck,ou=admins,@BASE_DN@");)
+
+dn: cn=Z-SESAM-IDCHECK,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: Z-SESAM-IDCHECK

@@ -1,0 +1,22 @@
+dependencies:
+- name: frconfig
+  version: ">0.0.0"
+  repository: file://../../helm/frconfig
+- name: ds
+  version: ">0.0.0"
+  repository: file://../../helm/ds
+  alias: configstore
+- name: ds
+  version: ">0.0.0"
+  repository: file://../../helm/ds
+  alias: userstore
+- name: ds
+  version: ">0.0.0"
+  repository: file://../../helm/ds
+  alias: ctstore
+- name: openam
+  version: ">0.0.0"
+  repository: file://../../helm/openam
+- name: amster
+  version: ">0.0.0"
+  repository: file://../../helm/amster

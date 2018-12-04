@@ -1,0 +1,21 @@
+dependencies:
+- name: frconfig
+  repository: file://../../helm/frconfig
+  version: 6.5.0
+- name: ds
+  repository: file://../../helm/ds
+  version: 6.5.0
+- name: ds
+  repository: file://../../helm/ds
+  version: 6.5.0
+- name: ds
+  repository: file://../../helm/ds
+  version: 6.5.0
+- name: openam
+  repository: file://../../helm/openam
+  version: 6.5.0
+- name: amster
+  repository: file://../../helm/amster
+  version: 6.5.0
+digest: sha256:9bb81a9bf281cbe460325a1ae3466d179881f8bea49f58f3c05e58546191dee6
+generated: 2018-11-23T14:26:51.989698986+01:00

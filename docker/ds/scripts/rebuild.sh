@@ -4,7 +4,7 @@
 
 echo "Rebuilding indexes"
 
-BASE_DN="ou=identities"
+BASE_DN="${BASE_DN:-ou=identities}"
 
 bin/rebuild-index \
  --port 4444 \

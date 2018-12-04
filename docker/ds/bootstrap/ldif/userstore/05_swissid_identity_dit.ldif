@@ -1,0 +1,13 @@
+dn: ou=user_identity_idl_1,@BASE_DN@
+ou: user_identity_idl_1
+objectClass: organizationalUnit
+objectClass: top
+aci: (version 3.0; acl "Add or delete identities"; allow (add, delete)(userdn = "ldap:///uid=support,ou=admins,@BASE_DN@");)
+aci: (version 3.0; acl "Add or delete identities"; allow (add, delete)(userdn = "ldap:///uid=idcheck,ou=admins,@BASE_DN@");)
+
+dn: ou=id_check_process,@BASE_DN@
+ou: id_check_process
+objectClass: organizationalUnit
+objectClass: top
+aci: (version 3.0; acl "Add or delete identities"; allow (add, delete)(userdn = "ldap:///uid=support,ou=admins,@BASE_DN@");)
+aci: (version 3.0; acl "Add or delete identities"; allow (add, delete)(userdn = "ldap:///uid=idcheck,ou=admins,@BASE_DN@");)

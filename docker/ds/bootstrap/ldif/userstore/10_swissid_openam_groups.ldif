@@ -1,0 +1,11 @@
+dn: cn=Technical Users,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: Technical Users
+
+dn: cn=OpenAM Administrators,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: OpenAM Administrators

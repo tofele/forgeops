@@ -1,0 +1,49 @@
+image:
+  #repository: forgerock-docker-public.bintray.io/forgerock/ds
+  #repository: gcr.io/engineering-devops/ds
+  repository: docker-registry.default.svc:5000/sws-tom1/ds
+  tag: 6.5.0
+  pullPolicy: Always
+
+instance: configstore
+
+configstore:
+  enabled: true
+
+cts:
+  enabled: false
+
+userstore:
+  enabled: false
+
+idmRepo:
+  enabled: false
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 1Gi
+  requests:
+    cpu: 1000m
+    memory: 1Gi
+
+persistence: false
+
+replicas: 1
+
+storageSize: 1Gi
+
+topologyKey: "kubernetes.io/hostname"
+
+podAntiAffinity: soft
+
+backup:
+#  pvcClaimName: ds-backup
+  clusterName: dev
+  verify: false
+
+# If existing database is found then restore is always skipped
+restore:
+  enabled: false
+
+securityContext:

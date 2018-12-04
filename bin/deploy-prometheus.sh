@@ -36,10 +36,17 @@ while getopts :n:f:k: option; do
     esac
 done
 
-# Check if -n flag has been included
-if [[ $1 != "-n" ]]; then
-    NAMESPACE=monitoring
-fi
+NAMESPACE=${NAMESPACE:-monitoring}
+
+# Set tiller namespace for helm
+case ${NAMESPACE} in
+    monitoring)
+        export TILLER_NAMESPACE=kube-system
+        ;;
+    *)
+		export TILLER_NAMESPACE=${NAMESPACE}
+		;;
+esac
 
 # set custom yaml file if not provided with the -f arg
 if [ $FILE ]; then

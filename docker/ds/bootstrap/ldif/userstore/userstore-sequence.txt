@@ -1,0 +1,52 @@
+# done via profiles in AM 6.5
+opendj_user_schema.ldif
+opendj_dashboard.ldif
+opendj_deviceprint.ldif
+opendj_kba.ldif
+opendj_oathdevices.ldif
+opendj_pushdevices.ldif
+
+99-userIdentity.ldif
+
+# replace variables
+# done via profiles in AM 6.5
+add-openam-userstore-entries.ldif
+
+dit.ldif
+dit-sesam.ldif
+dit-social.ldif
+add-custom-applications-userstore-entries.ldif
+add-opendj-backup-admin-entries.ldif
+
+# ACI settings
+# does not seem to be required anymore in AM 6.5 ... ???
+try "$binDir/dsconfig set-access-control-handler-prop --hostname localhost --port $adminConnectorPort --bindDN \"$rootUserDN\" --bindPasswordFile \"$passwordFile\" --add 'global-aci:(target=\"ldap:///cn=schema\")(targetattr=\"attributeTypes||objectClasses\")(version 3.0; acl \"Modify schema\"; allow (write) userdn=\"ldap:///uid=openam,ou=admins,$baseDN\";)'  --trustAll  -n "
+
+# password policy
+try "$binDir/dsconfig --hostname localhost --port $adminConnectorPort --bindDN \"$rootUserDN\" --bindPasswordFile \"$passwordFile\" -n set-password-policy-prop --policy-name \"Default Password Policy\" --set \"default-password-storage-scheme:Salted SHA-256\" --trustAll --no-prompt "
+
+# enable UID unique Attribute
+# primary & secondary instances
+try "$binDir/dsconfig --hostname localhost --port $adminConnectorPort --bindDN \"$rootUserDN\" --bindPasswordFile \"$passwordFile\" set-plugin-prop --plugin-name \"UID Unique Attribute\" --set base-dn:ou=people,$baseDN --set enabled:true  --trustAll --no-prompt "
+
+# create Email unique Attribute
+# primary & secondary instances
+try "$binDir/dsconfig --hostname localhost --port $adminConnectorPort --bindDN \"$rootUserDN\" --bindPasswordFile \"$passwordFile\" create-plugin --plugin-name \"Email Unique Attribute\" --type unique-attribute  --set type:mail --set base-dn:ou=people,$baseDN --set enabled:true  --trustAll --no-prompt "
+
+# monitoring user
+
+support-groups.ldif
+openam-admin-groups.ldif
+openam-accountmanager-user.ldif
+
+# $loadOpenAmAdminUsers" = "true"
+openam-admin-users.ldif
+
+# "$loadDemoSupportUsers" = "true"
+support-users.ldif
+
+# "$loadDemoUsers" = "true"
+test-user.ldif
+
+# "$loadDemoSuisseIdIdentities" = "true"
+suisseid-identity.ldif

@@ -1,0 +1,4 @@
+agent:
+  user: nginx
+  amServer: http://login.prod.example.com
+  realm: "/"

@@ -32,7 +32,7 @@ if [ -n "$CONFIG_REPLICATION" ]; then
         -I admin -w password -X \
         --bindDn1 "cn=directory manager" --bindPassword1 password \
         --bindDn2 "cn=directory manager" --bindPassword2 password \
-        --baseDn ou=identities \
+        --baseDn $BASE_DN \
         --baseDn ou=tokens \
         --baseDn ou=am-config \
         --baseDn dc=openidm,dc=example,dc=com \
@@ -43,7 +43,7 @@ if [ -n "$CONFIG_REPLICATION" ]; then
     echo "##### Initializing replication between DSRS 1 and DSRS 2..."
     ./run/dsrs1/bin/dsreplication initialize-all \
         -I admin -w password -X \
-        --baseDn ou=identities \
+        --baseDn $BASE_DN \
         --baseDn ou=tokens \
         --baseDn ou=am-config \
         --baseDn dc=openidm,dc=example,dc=com \
@@ -83,8 +83,10 @@ convert_to_template()
 
     # update config.ldif. continue on error is set so we keep applying the changes
     # Some of the configuration changes won't apply if replication is not being configured.
-    ./bin/ldifmodify -c -o config/config.ldif.new config/config.ldif ../../config-changes.ldif
+    sed -e "s/@BASE_DN@/$BASE_DN/g" ../../config-changes.ldif > ../../config-changes-sed.ldif
+    ./bin/ldifmodify -c -o config/config.ldif.new config/config.ldif ../../config-changes-sed.ldif
     mv config/config.ldif.new config/config.ldif
+    rm ../../config-changes-sed.ldif
 
 
     cd ../../

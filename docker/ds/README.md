@@ -10,7 +10,7 @@ Stage 1 scripts are in the bootstrap/ folder. This folder is not copied into the
 does the following:
 
 * The new DS profiles feature is used to create backends based on the profile templates.
-* Several backends are configured (ou=tokens, ou=identities, ou=am-config, dc=openidm,dc=example,dc=com) making the instance suitable multiple
+* Several backends are configured (ou=tokens, ou=$BASE_DN, ou=am-config, dc=openidm,dc=example,dc=com) making the instance suitable multiple
 purposes. Backends can be disabled at runtime if they are not required.
 * Creates two ds instances that are replicated to each other. The instances have hard coded hostnames (ds1.example.com).
 * Both instances are shut down

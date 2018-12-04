@@ -1,0 +1,11 @@
+dn: uid=jmxmonitoring,ou=admins,ou=am-config
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: OpenDJ JMX Monitoring Administrator
+sn: Monitoring
+userPassword: password
+ds-privilege-name: jmx-notify
+ds-privilege-name: jmx-read
+#ds-privilege-name: jmx-write

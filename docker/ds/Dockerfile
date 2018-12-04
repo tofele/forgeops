@@ -8,10 +8,14 @@ RUN download -v $VERSION opendj
 #FROM openjdk:11-jdk 
 FROM openjdk:8-jdk 
 COPY --from=0 /opendj.zip /var/tmp/opendj.zip
+COPY opendj-support-extract-tool.zip /var/tmp/opendj-support-extract-tool.zip
 
 WORKDIR /var/tmp/bootstrap
 
 COPY bootstrap/ /var/tmp/bootstrap/
+
+# The default BASE_DN of the directory tree.
+ENV BASE_DN dc=swisssign,dc=com
 
 # This speeds up docker cloudbuild considerably
 ENV OPENDJ_JAVA_ARGS "-Djava.security.egd=file:/dev/./urandom"
@@ -28,7 +32,7 @@ RUN chmod +x /usr/bin/tini
 
 COPY --from=1 /var/tmp/bootstrap/run/dsrs1 /opt/opendj/
 
-RUN useradd -d /opt/opendj -G root -m -u 11111 forgerock \
+RUN useradd -d /opt/opendj -G root -u 11111 forgerock \
     && apt-get update && apt-get install -y --no-install-recommends dumb-init vim fio
    
 WORKDIR /opt/opendj 
@@ -52,7 +56,7 @@ COPY *.sh /opt/opendj/
 COPY bootstrap/secrets/* /var/run/secrets/opendj/
 COPY scripts/ /opt/opendj/scripts/ 
 
-RUN chown -R forgerock:root /opt/opendj
+RUN chown -R forgerock:root /opt/opendj && chmod -R g=u /opt/opendj
 
 USER 11111
 

@@ -1,0 +1,99 @@
+dn: uid=tomas.felner,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: tomas.felner
+cn: Tomas Felner
+sn: Felner
+givenName: Tomas
+telephonenumber: +41768223828
+inetUserStatus: Active
+sesamGender: 1
+mail: tomas.felner@swisssign.com
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: uid=gaetano.debenedetto,ou=people,@BASE_DN@
+changetype: add
+objectClass: oathDeviceProfilesContainer
+objectClass: iplanet-am-user-service
+objectClass: person
+objectClass: organizationalperson
+objectClass: pushDeviceProfilesContainer
+objectClass: sunAMAuthAccountLockout
+objectClass: iPlanetPreferences
+objectClass: top
+objectClass: sunIdentityServerLibertyPPService
+objectClass: sunFMSAML2NameIdentifier
+objectClass: inetorgperson
+objectClass: sunFederationManagerDataStore
+objectClass: devicePrintProfilesContainer
+objectClass: iplanet-am-auth-configuration-service
+objectClass: kbaInfoContainer
+objectClass: iplanet-am-managed-person
+objectClass: inetuser
+objectClass: swissidAccountExtension
+uid: gaetano.debenedetto
+cn: Gaetano Debenedetto
+sn: Debenedetto
+givenName: Gaetano
+telephonenumber: +41779416100
+inetUserStatus: Active
+sesamGender: 1
+mail: gaetano.debenedetto@swisssign.com
+preferredLocale: de_CH
+preferredTimeZone: GMT+01:00
+userPassword: changeit
+
+dn: cn=OpenAM Administrators,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=tomas.felner,ou=people,@BASE_DN@
+uniqueMember: uid=gaetano.debenedetto,ou=people,@BASE_DN@
+
+#dn: cn=Technical Users,ou=groups,@BASE_DN@
+#changetype: modify
+#add: uniqueMember
+#uniqueMember: uid=tomas.felner,ou=people,@BASE_DN@
+#uniqueMember: uid=gaetano.debenedetto,ou=people,@BASE_DN@
+
+dn: cn=Z-SESAM-SUPPORT-CDO,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=tomas.felner,ou=people,@BASE_DN@
+uniqueMember: uid=gaetano.debenedetto,ou=people,@BASE_DN@
+
+dn: cn=Z-SESAM-SUPPORT-1L,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=tomas.felner,ou=people,@BASE_DN@
+uniqueMember: uid=gaetano.debenedetto,ou=people,@BASE_DN@
+
+dn: cn=Z-SESAM-SUPPORT-2L,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=tomas.felner,ou=people,@BASE_DN@
+uniqueMember: uid=gaetano.debenedetto,ou=people,@BASE_DN@
+
+dn: cn=Z-SESAM-SUPPORT-RP-M,ou=groups,@BASE_DN@
+changetype: modify
+add: uniqueMember
+uniqueMember: uid=tomas.felner,ou=people,@BASE_DN@
+uniqueMember: uid=gaetano.debenedetto,ou=people,@BASE_DN@

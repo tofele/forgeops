@@ -1,0 +1,40 @@
+dn: ou=tokens
+objectclass: top
+objectclass: domain
+dc: swisssign
+aci: (targetattr="*")(version 3.0;acl "Allow entry search"; allow (search, read) (userdn = "ldap:///uid=openam_cts,ou=admins,ou=tokens");)
+aci: (targetattr="*")(version 3.0;acl "Modify entries"; allow (write)(userdn= "ldap:///uid=openam_cts,ou=admins,ou=tokens");)
+aci: (targetcontrol="2.16.840.1.113730.3.4.3")(version 3.0;acl "Allow persistentsearch"; allow (search, read)(userdn = "ldap:///uid=openam_cts,ou=admins,ou=tokens");)
+aci: (version 3.0;acl "Add config entry"; allow (add)(userdn = "ldap:///uid=openam_cts,ou=admins,ou=tokens");)
+aci: (version 3.0;acl "Delete entries"; allow (delete)(userdn = "ldap:///uid=openam_cts,ou=admins,ou=tokens");)
+
+dn: ou=openam-session,ou=tokens
+objectClass: organizationalUnit
+objectClass: top
+ou: openam-session
+
+dn: ou=famrecords,ou=openam-session,ou=tokens
+ou: famrecords
+objectClass: organizationalUnit
+
+#dn: ou=admins,ou=famrecords,ou=openam-session,ou=tokens
+dn: ou=admins,ou=tokens
+objectClass: top
+objectClass: organizationalunit
+ou: OpenAM CTS Administrator
+
+#dn: uid=openam_cts,ou=admins,ou=famrecords,ou=openam-session,ou=tokens
+dn: uid=openam_cts,ou=admins,ou=tokens
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: OpenAM Non-Admin-User
+sn: OpenAM
+userPassword: password
+ds-privilege-name: update-schema
+ds-privilege-name: subentry-write
+ds-privilege-name: password-reset
+ds-privilege-name: unindexed-search
+ds-rlim-lookthrough-limit: 0
+ds-rlim-size-limit: 5000

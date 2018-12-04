@@ -1,0 +1,51 @@
+#
+# Copyright 2011-2018 ForgeRock AS. All Rights Reserved
+#
+# Use of this code requires a commercial software license with ForgeRock AS.
+# or with one of its affiliates. All use shall be exclusively subject
+# to such license between the licensee and ForgeRock AS.
+#
+dn: dc=swisssign,dc=com
+objectClass: top
+objectClass: domain
+dc: swisssign
+aci: (targetattr="*")(version 3.0;acl "Allow entry search";
+ allow (search, read) userdn = "ldap:///uid=openam_cts,ou=admins,ou=famrecords,ou=openam-session,dc=swisssign,dc=com";)
+aci: (targetattr="*")(version 3.0;acl "Modify entries"; allow (write)
+ userdn = "ldap:///uid=openam_cts,ou=admins,ou=famrecords,ou=openam-session,dc=swisssign,dc=com";)
+aci: (targetcontrol="2.16.840.1.113730.3.4.3")(version 3.0;
+ acl "Allow persistentsearch";allow (search, read)
+ userdn = "ldap:///uid=openam_cts,ou=admins,ou=famrecords,ou=openam-session,dc=swisssign,dc=com";)
+aci: (version 3.0;acl "Add config entry"; allow (add) userdn =
+ "ldap:///uid=openam_cts,ou=admins,ou=famrecords,ou=openam-session,dc=swisssign,dc=com";)
+aci: (version 3.0;acl "Delete entries"; allow (delete) userdn =
+ "ldap:///uid=openam_cts,ou=admins,ou=famrecords,ou=openam-session,dc=swisssign,dc=com";)
+
+dn: ou=openam-session,dc=swisssign,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: openam-session
+
+dn: ou=famrecords,ou=openam-session,dc=swisssign,dc=com
+ou: famrecords
+objectClass: organizationalUnit
+
+dn: ou=admins,ou=famrecords,ou=openam-session,dc=swisssign,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: OpenAM Administrator
+
+dn: uid=openam_cts,ou=admins,ou=famrecords,ou=openam-session,dc=swisssign,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: OpenAM Non-Admin-User
+sn: OpenAM
+userPassword: &{AM_CTS_ADMIN_PASSWORD}
+ds-privilege-name: update-schema
+ds-privilege-name: subentry-write
+ds-privilege-name: password-reset
+ds-privilege-name: unindexed-search
+ds-rlim-lookthrough-limit: 0
+ds-rlim-size-limit: 5000

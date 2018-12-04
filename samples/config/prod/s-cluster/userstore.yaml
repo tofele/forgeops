@@ -39,15 +39,11 @@ topologyKey: "failure-domain.beta.kubernetes.io/zone"
 
 podAntiAffinity: hard
 
-# if you want to disable backup, comment out this whole section.  Setting enabled to "false"
-# will not work
-
 backup:
-  enabled: true
-  storageClass: nfs
-  storageSize: 100Gi
-  pvcClaimName: ds-backup
-  
+#  pvcClaimName: ds-backup
+  clusterName: prod
+  verify: false
+
 # If existing database is found then restore is always skipped
 restore:
-  enabled: true
+  enabled: false

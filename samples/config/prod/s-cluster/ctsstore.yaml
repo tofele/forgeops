@@ -37,3 +37,11 @@ runPostSetupJob: false
 replicas: 2
 
 topologyKey: "failure-domain.beta.kubernetes.io/zone"
+backup:
+#  pvcClaimName: ds-backup
+  clusterName: prod
+  verify: false
+
+# If existing database is found then restore is always skipped
+restore:
+  enabled: false

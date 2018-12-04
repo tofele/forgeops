@@ -12,6 +12,7 @@
 cd /opt/opendj
 
 source /opt/opendj/env.sh
+source /opt/opendj/swissid.sh
 
 # Uncomment this to print experimental VM settings to stdout. -XshowSettings:vm
 #java -version -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal
@@ -115,6 +116,7 @@ case "$CMD" in
 start)
     init_container
     start
+    init_swissid
     ;;
 restore)
     restore

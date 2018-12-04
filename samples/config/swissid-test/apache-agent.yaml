@@ -1,0 +1,4 @@
+agent:
+  user: apache
+  amServer: http://login.test.example.com
+  realm: "/"

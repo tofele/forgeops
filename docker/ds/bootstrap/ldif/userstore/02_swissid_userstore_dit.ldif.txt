@@ -1,0 +1,37 @@
+dn: @BASE_DN@
+objectclass: top
+objectclass: domain
+dc: swisssign
+aci: (targetattr="* || aci")(version 3.0;acl "Allow identity modification"; allow (write)(userdn = "ldap:///uid=openam,ou=admins,@BASE_DN@");)
+aci: (targetattr!="userPassword||authPassword")(version 3.0; acl "Allow identity search"; allow (search, read)(userdn = "ldap:///uid=openam,ou=admins,@BASE_DN@");)
+aci: (targetcontrol="2.16.840.1.113730.3.4.3")(version 3.0; acl "Allow persistent search"; allow (search, read)(userdn = "ldap:///uid=openam,ou=admins,@BASE_DN@");)
+aci: (version 3.0; acl "Add or delete identities"; allow (add, delete)(userdn = "ldap:///uid=openam,ou=admins,@BASE_DN@");)
+aci: (targetattr="+")(version 3.0; acl "Allow identity search"; allow (search, read)(userdn = "ldap:///uid=openam,ou=admins,@BASE_DN@");)
+
+dn: ou=admins,@BASE_DN@
+objectClass: top
+objectClass: organizationalunit
+ou: admins
+
+#dn: uid=am-identity-bind-account,ou=admins,@BASE_DN@
+dn: uid=openam,ou=admins,@BASE_DN@
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: OpenAM Administrators
+sn: OpenAM
+userPassword: password
+ds-privilege-name: update-schema
+ds-privilege-name: subentry-write
+ds-privilege-name: password-reset
+
+dn: ou=people,@BASE_DN@
+objectClass: top
+objectClass: organizationalunit
+ou: OpenAM Administrators
+
+dn: ou=groups,@BASE_DN@
+objectClass: top
+objectClass: organizationalunit
+ou: OpenAM Administrators

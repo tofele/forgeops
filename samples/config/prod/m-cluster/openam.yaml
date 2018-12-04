@@ -22,8 +22,8 @@ catalinaOpts: >
   -Dcom.sun.identity.util.debug.provider=com.sun.identity.shared.debug.impl.StdOutDebugProvider
   -Dcom.sun.identity.shared.debug.file.format='%PREFIX% %MSG%\\n%STACKTRACE%'
   -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintGCDetails
-  -XX:+PrintPromotionFailure -XX:+PrintAdaptiveSizePolicy -XX:+PrintTenuringDistribution 
-  -Xloggc:/tmp/gc.log
+  -XX:+PrintPromotionFailure -XX:+PrintAdaptiveSizePolicy -XX:+PrintTenuringDistribution
+  -Xloggc:/tmp/gc.log -Duser.home=/home/forgerock
 
 # -XX:+PrintGCApplicationConcurrentTime -XX:ParallelGCThreads=12 -XX:+UseStringDeduplication -XX:G1HeapWastePercent=4 -XX:+CMSScavengeBeforeRemark
 

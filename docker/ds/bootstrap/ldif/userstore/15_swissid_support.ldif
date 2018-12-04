@@ -1,0 +1,39 @@
+dn: uid=support,ou=admins,@BASE_DN@
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: support Administrator
+sn: support
+userPassword: password
+ds-privilege-name: password-reset
+
+dn: @BASE_DN@
+changetype: modify
+add: aci
+aci: (targetattr="* || aci")(version 3.0;acl "Allow identity modification"; allow (write)(userdn = "ldap:///uid=support,ou=admins,@BASE_DN@");)
+aci: (targetattr!="userPassword||authPassword")(version 3.0; acl "Allow identity search"; allow (search, read)(userdn = "ldap:///uid=support,ou=admins,@BASE_DN@");)
+
+dn: cn=Z-SESAM-SUPPORT-CDO,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: Z-SESAM-SUPPORT-CDO
+
+dn: cn=Z-SESAM-SUPPORT-1L,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: Z-SESAM-SUPPORT-1L
+
+dn: cn=Z-SESAM-SUPPORT-2L,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: Z-SESAM-SUPPORT-2L
+
+dn: cn=Z-SESAM-SUPPORT-RP-M,ou=groups,@BASE_DN@
+changetype: add
+objectClass: groupofuniquenames
+objectClass: top
+cn: Z-SESAM-SUPPORT-RP-M

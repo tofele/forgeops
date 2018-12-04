@@ -7,7 +7,7 @@ RUN download -v $VERSION openidm
 
 RUN mkdir -p /var/tmp/openidm && unzip -q /openidm.zip -d /var/tmp && rm -fr /var/tmp/openidm/samples
 
-FROM forgerock-docker-public.bintray.io/forgerock/java:6.5.0
+FROM registry.appuio.ch/sws-tom1/java:6.5.0
 
 COPY --from=0 /var/tmp/openidm /opt/openidm
 

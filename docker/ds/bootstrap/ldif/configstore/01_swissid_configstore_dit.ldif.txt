@@ -1,0 +1,25 @@
+dn: ou=am-config
+objectclass: top
+objectclass: domain
+dc: swisssign
+aci: (targetattr="*")(version 3.0;acl "Allow CRUDQ operations"; allow (search, read, write, add, delete)(userdn = "ldap:///uid=openam,ou=admins,ou=am-config");)
+aci: (targetcontrol="2.16.840.1.113730.3.4.3")(version 3.0;acl "Allow persistent search"; allow (search, read)(userdn = "ldap:///uid=openam,ou=admins,ou=am-config");)
+aci: (targetcontrol="1.2.840.113556.1.4.473")(version 3.0;acl "Allow server-side sorting"; allow (read)(userdn = "ldap:///uid=openam,ou=admins,ou=am-config");)
+
+dn: ou=admins,ou=am-config
+objectclass: top
+objectclass: organizationalUnit
+ou: admins
+
+#dn: uid=am-config,ou=admins,ou=am-config
+dn: uid=openam,ou=admins,ou=am-config
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: ou=am-config
+sn: openam
+uid: openam
+userPassword: password
+ds-privilege-name: subentry-write
+ds-privilege-name: update-schema

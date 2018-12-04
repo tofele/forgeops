@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Script to "download" binaries from the ForgeRock Artifactory repository.
-# This is a fake script that mimics the functionality of the ../downloader/download script. This 
+# This is a fake script that mimics the functionality of the ../downloader/download script. This
 # example just assumes the artifacts are in place already.
 # The protocol you need to implement:
 # ./download [-v version] [openam,openig,opendj,opendidm]
@@ -30,4 +30,4 @@ done
 shift $((OPTIND -1))
 
 echo "Nothing to see here - I assume the binaries are already here in the / directory:"
-ls -l /
+ls -l /*.zip /*.war

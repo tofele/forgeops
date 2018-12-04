@@ -1,0 +1,6 @@
+agent:
+  user: nginx
+  amServer: http://login.sws-tom1.example.com
+  realm: "/"
+
+securityContext:

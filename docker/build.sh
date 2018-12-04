@@ -12,18 +12,18 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cd $DIR
 
 # Default settings. You can set these all via command switches as well.
-REGISTRY="forgerock-docker-public.bintray.io"
+REGISTRY="registry.appuio.ch"
 #REGISTRY="forgerock-docker-internal.bintray.io"
 
-REPO="forgerock"
+REPO="sws-tom1"
 # Default tag if none is specified.
 TAG=${TAG:-6.5.0}
 
 # If you want to push to Google gcr.io, replace the repository name with your project name.
-PROJECT="engineering-devops"
+PROJECT="sws-tom1"
 
 # These are the default images that will be built if no images are specified on the command line.
-IMAGES="openam ds openidm openig amster util git java gatling apache-agent nginx-agent"
+IMAGES="git java util amster openam ds gatling apache-agent nginx-agent"
 
 # --cache-from multistage issue: https://github.com/moby/moby/issues/34715
 while getopts "adgpt:r:R:P:i:c:n:C:" opt; do
@@ -85,12 +85,12 @@ DL=`docker images -q forgerock/downloader`
 if [ -z "$DL" ]; then 
     echo "Can't find forgerock/downloader image needed to download ForgeRock binaries. I will attempt to build it"
 
-    if [ -z "$API_KEY" ]; then
-      echo "Artifactory API_KEY environment variable is not set. You must export API_KEY=your_artifactory_api_key"
-      exit 1
-    fi  
+#    if [ -z "$API_KEY" ]; then
+#      echo "Artifactory API_KEY environment variable is not set. You must export API_KEY=your_artifactory_api_key"
+#      exit 1
+#    fi  
     echo "Building downloader"
-    docker build -t forgerock/downloader --build-arg API_KEY=$API_KEY downloader
+    docker build -t forgerock/downloader --no-cache $DOCKER_PROXY --build-arg API_KEY=$API_KEY downloader-sample
 fi 
 
 # Take the build list from a CSV file..
@@ -108,7 +108,7 @@ if [ -n "$BUILD_CSV" ]; then
 
       # For each registry we support ()
       # for reg in "gcr.io/engineering-devops"
-      for reg in "gcr.io/engineering-devops" "forgerock-docker-public.bintray.io/forgerock" 
+      for reg in "$REGISTRY/$REPO" "eu.gcr.io/swissid-cloud"
       do
           img="${reg}/${folder}"
           ${DRYRUN} docker tag ${folder} "${img}:${tag}"
@@ -134,9 +134,10 @@ function buildDocker {
     CF="--cache-from $CACHE_FROM/$1:${TAG}"
    fi
 
-   eval ${DRYRUN}  docker build $NETWORK "$CF" -t ${REGISTRY}/${REPO}/$1:${TAG} $1
+   eval ${DRYRUN}  docker build $NETWORK --no-cache $DOCKER_PROXY "$CF" -t ${REGISTRY}/${REPO}/$1:${TAG} $1
    if [ -n "$PUSH" ]; then
       ${DRYRUN} docker push ${REGISTRY}/${REPO}/$1:${TAG}
+      ${DRYRUN} docker push "eu.gcr.io/swissid-cloud/$1:${TAG}"
    fi
 }
 
