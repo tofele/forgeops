@@ -1,5 +1,3 @@
-*.zip
-*.war
 staging/
 tmp/
 *.iml
@@ -13,7 +11,6 @@ target/
 bazel-*
 brigade.yaml
 settings.xml
-*.cfg
 etc/cert-manager.json
 *.pyc
 .vscode/
