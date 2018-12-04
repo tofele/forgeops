@@ -31,19 +31,6 @@ ask
 #source "$(dirname $0)/../etc/oc-env.cfg"
 source "${BASH_SOURCE%/*}/../etc/oc-env.cfg"
 
-# Set the GKE Project ID to the one parsed from the cfg file
-#gcloud config set project ${GKE_PROJECT_ID}
-
-# Now create the cluster
-#./oc-create-cluster.sh
-
-#if [ $? -ne 0 ]; then
-#    exit 1
-#fi
-
-# Add a nodepool for nfs server
-#./oc-create-nodepool.sh
-
 # Create helm tiller namespace
 #oc create project ${OC_TILLER_PROJECT}
 
@@ -52,7 +39,7 @@ source "${BASH_SOURCE%/*}/../etc/oc-env.cfg"
 
 # Create the namespace parsed from cfg file and set the context
 #oc create project ${OC_PROJECT}
-oc config set-context $(oc config current-context) --namespace=${OC_PROJECT}
+oc project ${OC_PROJECT}
 
 # Create storage class
 #./oc-create-sc.sh
@@ -68,10 +55,6 @@ do
     echo "Waiting on tiller to be ready..."
     sleep 5s
 done
-
-# Create the ingress controller
-# Openshift comes with ingress controller already set up
-#./oc-create-route.sh ${OC_ROUTE_IP}
 
 # Deploy cert-manager
 #./deploy-cert-manager.sh -n ${OC_PROJECT}
