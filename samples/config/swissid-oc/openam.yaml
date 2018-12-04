@@ -28,3 +28,6 @@ catalinaOpts: >
 # Openshift does not know about Ingress
 ingress:
   enabled: false
+
+route:
+  enabled: true
