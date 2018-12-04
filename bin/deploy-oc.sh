@@ -133,27 +133,7 @@ create_namespace()
             exit 1
         fi
     fi
-}
-
-set_tiller_namespace() {
-  if $(kubectl get namespace ${NAMESPACE} > /dev/null 2>&1); then
-      echo "=> Namespace ${NAMESPACE} already exists.  Skipping creation..."
-      # Namespace/project already exists, assuming Openshift environment
-      # tiller cannot be in kube-system for Openshift
-      # TILLER_NAMESPACE will be used by helm command under the hoods
-      export TILLER_NAMESPACE=${NAMESPACE}
-      export TILLER_NAMESPACE=kube-system
-  else
-      echo "=> Creating namespace \"${NAMESPACE}\""
-      kubectl create namespace ${NAMESPACE}
-      if [ $? -ne 0 ]; then
-          echo "Non-zero return by kubectl.  Is your context correct? Exiting!"
-          exit 1
-      fi
-      # Assuming non-Openshift environment, so tiller will be in kube-system
-      # TILLER_NAMESPACE will be used by helm command under the hoods
-      export TILLER_NAMESPACE=kube-system
-  fi
+    oc -n ${NAMESPACE} policy add-role-to-user edit "system:serviceaccount:${TILLER_NAMESPACE}:tiller"
 }
 
 # todo: this should decode and install any secrets we need. The git-ssh-key, for example
@@ -311,17 +291,10 @@ if [ ! -z "$DRYRUN" ]; then
     exit 0
 fi
 
+#source "$(dirname $0)/../etc/oc-env.cfg"
+source "${BASH_SOURCE%/*}/../etc/oc-env.cfg"
+
 create_namespace
-
-#set_tiller_namespace
-export TILLER_NAMESPACE=sws-tiller
-
-# Deploy cert-manager
-#./deploy-cert-manager.sh -n ${NAMESPACE}
-
-# Add Prometheus
-#./deploy-prometheus.sh -n ${NAMESPACE}
-
 deploy_charts
 
 if [[ " ${COMPONENTS[@]} " =~ " openam " ]]; then
